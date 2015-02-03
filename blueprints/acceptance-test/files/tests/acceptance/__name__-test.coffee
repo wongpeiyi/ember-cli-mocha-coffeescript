@@ -4,11 +4,11 @@
 
 describe "Acceptance: <%= classifiedModuleName %>", ->
   beforeEach ->
-    App = startApp()
+    @App = startApp()
     return
 
   afterEach ->
-    Ember.run(App, "destroy")
+    Ember.run(@App, "destroy")
 
   it "can visit /<%= dasherizedModuleName %>", ->
     visit "/<%= dasherizedModuleName %>"

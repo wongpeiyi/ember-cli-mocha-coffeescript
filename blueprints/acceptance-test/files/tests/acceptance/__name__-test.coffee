@@ -5,6 +5,7 @@
 describe "Acceptance: <%= classifiedModuleName %>", ->
   beforeEach ->
     App = startApp()
+    return
 
   afterEach ->
     Ember.run(App, "destroy")
